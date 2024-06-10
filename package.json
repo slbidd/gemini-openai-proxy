@@ -7,7 +7,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start:node": "node dist/main_node.mjs",
+    "start:node": "npm run build:node && node dist/main_node.mjs",
     "build:node": "node build.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
     "generate-openapi-types": "deno run --allow-net --no-prompt --allow-env=YOUR_GEMINI_API_KEY --allow-write=./src/openapi-types.ts generate-opeapi-types.ts"
